@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="style.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <div class=head><h1 class="head_text">Достопримичательности России</h1>
+        <marquee>Достопримичательности России красивые</marquee></div>
+<div class="menu">
+        <h3>Меню</h3>
+    <ul>
+        <li><a href="#" onclick="loadPage('moscow')">Москва</a></li>
+        <li><a href="#" onclick="loadPage('spb')">Санкт-Петербург</a></li>
+        <li><a href="#" onclick="loadPage('suzdal')">Суздаль</a></li>
+        
+    </ul>
+    </div>
+</nav>
+<div class="hello"><h2 >Добро пожаловать!</h2>
+    <p>Выберите город в меню слева.</p></div>
+<main id="content">
+    
+<div class="coment">
+    <h3 >Оставьте отзыв:</h3>
+    <form>
+        Имя:<br>
+        <input type="text"><br><br>
+
+        Комментарий:<br>
+        <textarea></textarea><br><br>
+
+        <input type="submit" value="Отправить">
+        <input type="reset" value="Очистить">
+    </form>
+    </div>
+</main>
+
+<script>
+function loadPage(page) {
+    let content = document.getElementById("content");
+
+    if (page === "moscow") {
+        content.innerHTML = `
+        <h2>Москва</h2>
+        <img src="moscow.jpg">
+        <p >Москва — столица и самый большой город страны. Здесь расположены: Московский Кремль и Красная площадь (внесены в список Объектов Всемирного Наследия ЮНЕСКО), Третьяковская Галерея, Музей имени Пушкина, Храм Христа-Спасителя, Богоявленский Со- бор, Свято-Данилов монастырь, многочисленные церкви и монастыри, мемориальный ком- плекс на Поклонной горе, Триумфальная арка на Кутузовском проспекте, Новый и Старый Арбат, Бульварное кольцо, Коломенское, Гостиный Двор и Манежная площадь, знаменитые
+«высотки» сталинской эпохи, ВВЦ с «Рабочим и колхозницей», зоопарк, «Японский сад» в Ботаническом саду, цирки и известные во всем мире многочисленные театры. В пригородах: усадьбы Кусково, Архангельское, Царицыно, Абрамцево, город Сергиев Посад, знаменитый расположенным в нем величайшим в России монастырем — Троице-Сергиевой Лаврой.</p>
+        <button onclick="location.reload()">Назад</button>
+        `;
+    }
+
+    if (page === "spb") {
+        content.innerHTML = `
+        <h2>Санкт-Петербург</h2>
+        <img src="spb.jpg">
+        <p>Санкт-Петербург — культурная столица России, известен Эрмитажем.</p>
+        <button onclick="location.reload()">Назад</button>
+        `;
+    }
+
+    if (page === "suzdal") {
+        content.innerHTML = `
+        <h2>Суздаль</h2>
+        <img src="suzdal.jpg">
+        <p>Суздаль — древний город с множеством церквей и монастырей.</p>
+        <button onclick="location.reload()">Назад</button>
+        `;
+    }
+
+  
+}
+</script>
+    
+    
+</body>
+</html>
