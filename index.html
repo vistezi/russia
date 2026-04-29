@@ -21,7 +21,7 @@
     </div>
 </nav>
 <div class="hello"><h2 >Добро пожаловать!</h2>
-    <p>Выберите город в меню слева.</p></div>
+    <h3>Выберите город в меню слева.</h3></div>
 <main id="content">
     
 <div class="coment">
@@ -70,9 +70,27 @@ function loadPage(page) {
         <button onclick="location.reload()">Назад</button>
         `;
     }
+    if (page === "vladimir") {
+        content.innerHTML = `
+        <h2>Владимир</h2>
+        <img src="img/vladimir.jpg">
+        <p>Владимир известен Золотыми воротами и древними соборами.</p>
+        <button onclick="location.reload()">Назад</button>
+        `;
+    }
+
+    if (page === "kostroma") {
+        content.innerHTML = `
+        <h2>Кострома</h2>
+        <img src="img/kostroma.jpg">
+        <p>Кострома — старинный город с богатой историей.</p>
+        <button onclick="location.reload()">Назад</button>
+        `;
+    }
+}
 
   
-}
+
 </script>
     
     
