@@ -1,11 +1,11 @@
 .head{
 
     background: linear-gradient(to right, #8f0808, #240503);
-    padding: 20px;
+    transform: translateY(-30px);
     text-align: center;
     font-size: 24px;
     color: black;
-height: 130px;}
+height: 150px;}
 .head_text{color: antiquewhite;}
 .head marquee{color: antiquewhite;}
 .hello{margin-left: 750px;
@@ -19,3 +19,4 @@ body{background:url(background.jpg);}
 margin-left: 1600px}
 a{text-decoration: none;
 color: rgb(0, 0, 0);}
+p{color: rgb(212, 180, 138);}
